@@ -10,37 +10,25 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import sheridan.faseyi.assingnment3.ui.theme.ASSINGNMENT3Theme
+import dagger.hilt.android.AndroidEntryPoint
+import sheridan.faseyi.assingnment3.ui.AppScreen
+import sheridan.faseyi.assingnment3.ui.theme.ASSIGNMENT3Theme
+
+@AndroidEntryPoint
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ASSINGNMENT3Theme {
+            ASSIGNMENT3Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    AppScreen()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ASSINGNMENT3Theme {
-        Greeting("Android")
     }
 }
