@@ -65,7 +65,7 @@ fun HomeScreen(
         topBar = {
             ShoppingListTopAppBar(
                 title = stringResource(HomeDestination.titleRes),
-                canNavigateBack = true,
+                canNavigateBack = false,
                 scrollBehavior = scrollBehavior
             )
         },

@@ -2,7 +2,6 @@ package sheridan.faseyi.assingnment3.ui.model
 
 import sheridan.faseyi.assingnment3.data.local.Priority
 import sheridan.faseyi.assingnment3.domain.Item
-import sheridan.faseyi.assingnment3.ui.common.formatCurrency
 
 data class ListItemModel(
     val id: Int,
