@@ -6,9 +6,7 @@ import sheridan.faseyi.assingnment3.ui.model.ItemDetailsModel
 import sheridan.faseyi.assingnment3.ui.model.toItemDetailsModel
 
 
-/**
- * UI state for ItemDetailsScreen
- */
+
 data class ItemDetailsUiState(
     val priority: Priority,
     val item: ItemDetailsModel

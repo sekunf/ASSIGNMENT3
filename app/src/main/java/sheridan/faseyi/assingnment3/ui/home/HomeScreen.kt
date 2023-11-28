@@ -45,9 +45,7 @@ import sheridan.faseyi.assingnment3.ui.model.toListItemModel
 import sheridan.faseyi.assingnment3.ui.navigation.HomeDestination
 import sheridan.faseyi.assingnment3.ui.theme.ASSIGNMENT3Theme
 
-/**
- * Entry route for Home screen
- */
+
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable

@@ -56,18 +56,4 @@ fun ItemEntryScreen(
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-private fun ItemEntryScreenPreview() {
-    ASSIGNMENT3Theme {
-        ItemFormBody(
-            itemFormUiState = ItemFormUiState(
-                ItemFormModel(
-                    name = "Item name", brand = "Brand Name", priority = Priority.LOW, selected = true,
-                )
-            ),
-            onNameChange = {}, onBrandChange = {},  onPriorityChange = {},
-            onSaveClick = {}
-        )
-    }
-}
+
